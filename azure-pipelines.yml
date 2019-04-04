@@ -19,12 +19,6 @@ steps:
   displayName: 'npm install'
   inputs:
     command: install
-
-- task: Npm@1
-  displayName: 'npm test'
-  inputs:
-    command: custom
-    customCommand: 'test'
     
 - task: ArchiveFiles@2
   inputs:
